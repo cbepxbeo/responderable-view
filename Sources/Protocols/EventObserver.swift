@@ -7,6 +7,8 @@ Date: 14.05.2023
 
 */
 
-public enum ChangeResult {
-    case resigned, focused
+import Foundation
+
+internal protocol EventObserver: AnyObject {
+    func didTapInWindow(at: CGPoint)
 }
